@@ -20,6 +20,7 @@ body {
     grid-template-areas:
         "header header"
         "click hover";
+    height: 100vh;
 }
 
 header {
