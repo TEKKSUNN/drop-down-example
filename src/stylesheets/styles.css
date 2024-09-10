@@ -1,6 +1,8 @@
 :root {
     --header-bg: #654520;
     --header-fg: #81DAE3;
+    --tab-bg: #825B32;
+    --tab-fg: #6CBEC7;
     --pad-normal: 8px 16px;
     --shadow-normal: 5px 5px 10px rgb(0, 0, 0, 0.25);
 }
