@@ -3,6 +3,8 @@
     --header-fg: #81DAE3;
     --tab-bg: #825B32;
     --tab-fg: #6CBEC7;
+    --light-tab-bg: hsl(31, 44%, 55%);
+    --dark-tab-fg: hsl(186, 45%, 40%);
     --pad-normal: 8px 16px;
     --shadow-normal: 5px 5px 10px rgb(0, 0, 0, 0.25);
 }
@@ -51,4 +53,41 @@ header h1 {
 
 #hover-drop-down {
     grid-area: hover;
+}
+
+.tab-title {
+    font-size: 48px;
+    text-shadow: var(--shadow-normal);
+    margin: 0;
+    padding: var(--pad-normal);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.drop-down,
+li > button {
+    border: 0;
+    font-size: 24px;
+    padding: var(--pad-normal);
+    border-radius: 8px;
+    background-color: var(--tab-bg);
+    color: var(--tab-fg);
+}
+
+li > button:hover,
+.drop-down:hover {
+    background-color: var(--light-tab-bg);
+    color: var(--dark-tab-fg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
