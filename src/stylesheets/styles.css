@@ -12,9 +12,16 @@
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "click hover";
 }
 
 header {
+    grid-area: header;
     background-color: var(--header-bg);
     color: var(--header-fg);
     padding: var(--pad-normal);
@@ -26,4 +33,12 @@ header {
 header h1 {
     margin: 0;
     padding: 0;
+}
+
+#click-drop-down {
+    grid-area: click;
+}
+
+#hover-drop-down {
+    grid-area: hover;
 }
