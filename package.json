@@ -21,6 +21,6 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "@tekksunn/drop-down": "^2.0.0"
+    "@tekksunn/drop-down": "2.1.x"
   }
 }
